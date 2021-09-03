@@ -87,10 +87,12 @@ function draw() {
 function keyPressed(){
 	if(keyCode == LEFT_ARROW){
 		helicopterSprite.x=helicopterSprite.x-5;
+		packageBody.x=packageBody.x-5
 	}
 
 	if(keyCode == RIGHT_ARROW){
 		helicopterSprite.x=helicopterSprite.x+5;
+		packageBody.x=packageBody.x+5
 	}
 
 	if(keyCode == DOWN_ARROW){
