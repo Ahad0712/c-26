@@ -1,5 +1,5 @@
 var helicopterIMG, helicopterSprite, packageSprite,packageIMG;
-var packageBody,ground
+var packageBody,ground,packagesprite
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -74,6 +74,7 @@ function draw() {
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
 
+  
 
  
   
@@ -87,12 +88,12 @@ function draw() {
 function keyPressed(){
 	if(keyCode == LEFT_ARROW){
 		helicopterSprite.x=helicopterSprite.x-5;
-		packageBody.x=packageBody.x-5
+		packageSprite.x=packageSprite.x-5
 	}
 
 	if(keyCode == RIGHT_ARROW){
 		helicopterSprite.x=helicopterSprite.x+5;
-		packageBody.x=packageBody.x+5
+		packageSprite.x=packageSprite.x+5
 	}
 
 	if(keyCode == DOWN_ARROW){
